@@ -84,10 +84,10 @@ public:
     for(const auto & kv : vars){
       VAR newfreevar = replacevar(F, kv.first, nextfreevar);
       ensure_implication(F, kv.first, nextfreevar);
-      for(VAR i=nextfreevar; i<newfreevar; ++i){
+      for(VAR i=nextfreevar; i<(newfreevar-1); ++i){
         ensure_implication(F, i, i+1);
       }
-      ensure_implication(F, newfreevar, kv.first);
+      ensure_implication(F, (newfreevar-1), kv.first);
       nextfreevar = newfreevar;
     }
   }
