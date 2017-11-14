@@ -34,6 +34,10 @@ format (most SAT solvers use this format)
 
 There are two demo CNFs provided in the data directory.
 
+```sh
+./sat3_converter data/sample.dim sample_sat3.dim
+```
+
 ## Implementation
 
 There are two implementations differing only in the way the CNF is stored.
