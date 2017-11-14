@@ -5,7 +5,7 @@ most 3 times.
 
 ## Definition
 
-Let $$SAT(k)$$ be SAT for CNF formulas with at most k occurrences of every variable.
+Let SAT(k) be SAT for CNF formulas with at most k occurrences of every variable.
 
 ## Lemma
 
